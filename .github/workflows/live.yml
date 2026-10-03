@@ -11,4 +11,4 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Start Live Stream
         run: |
-          ffmpeg -re -stream_loop -1 -i "Live highlight(12).mp4" -c:v copy -c:a aac -b:a 128k -f flv rtmp://a.rtmp.youtube.com/live2/${{ secrets.YOUTUBE_KEY }}
+          ffmpeg -re -stream_loop -1 -i "Live highlight(11).mp4" -c:v copy -c:a aac -b:a 128k -f flv rtmp://a.rtmp.youtube.com/live2/${{ secrets.YOUTUBE_KEY }}
